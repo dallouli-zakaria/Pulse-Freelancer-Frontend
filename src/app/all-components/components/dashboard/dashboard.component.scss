@@ -1,0 +1,489 @@
+.main {
+    width: 100%;
+    min-height: 100vh;
+    max-height: 900vh;
+    background-color: #f0f5f9;
+    // position: fixed;
+}
+
+mat-toolbar {
+    display: flex;
+    // position: fixed;
+    justify-content: end;
+    min-width: 100%;
+}
+
+.menu {
+    display: none;
+}
+
+mat-toolbar > div {
+    background-color: #fff;
+    width: 1200px;
+    min-width: 100px;
+    margin-top: 20px;
+    height: 72px;
+    margin-top: 30px;
+    border: 1px solid #e5eaef;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+@media only screen and (max-width:1322px) {
+    mat-toolbar > div {
+        width: 900px;
+        min-width: 100px;
+    }
+
+    // .profil {
+    //     margin-left: 20px;
+    //     position: relative;
+    //     right: 210px;
+
+    // }
+}
+
+
+app-sidenav {
+    position: static;
+    min-height: 400vh;
+
+}
+
+.icon mat-icon {
+    color: blue;
+    cursor: pointer;
+}
+
+.icon {
+    text-align: start;
+}
+
+.button_img_page {
+    display: flex;
+}
+
+.button_img_page button {
+    background-color: #0085db;
+    padding: 6px;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin: 10px;
+    width: 130px;
+    font-family: sans-serif;
+}
+
+.button_img_page button:hover {
+    opacity: 5;
+}
+
+.button_img_page img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    border: 5px solid #fff;
+    margin: 10px;
+}
+
+.button_img_page img:hover {
+    border: 5px solid #e5eaef;
+    cursor: pointer;
+}
+
+
+.profil {
+
+    display: flex;
+    // margin-left: 1300px;
+    margin-top: 20px;
+    text-align: center;
+    position: relative;
+
+
+}
+
+.lists ul li {
+    list-style: none;
+    font-size: 1rem;
+    display: flex;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    // color: #8d97ad;
+
+}
+
+.lists ul li span {
+    margin-left: 16px;
+}
+
+.lists ul li mat-icon {
+    text-align: start;
+}
+
+.lists {
+    background-color: #fff;
+    padding: 10px;
+    width: 200px;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+.lists button {
+    background-color: #0085db;
+    padding: 12px;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+
+    width: 100%;
+    font-family: sans-serif;
+}
+
+.lists ul li:hover {
+    background-color: #e5eaef;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+
+.custom-modal {
+    margin: 0;
+    /* Marginni nolga sozlaymiz */
+}
+
+//  Form Login CSS
+.mains {
+    width: 100%;
+    min-height: 100vh;
+    max-height: 900vh;
+    background-color: #f0f5f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    border-radius: 10px;
+    background-color: #fff;
+    min-width: 200px;
+    padding: 6px;
+    width: 500px;
+    max-height: 700px;
+}
+
+.form_img {
+    display: flex;
+    justify-content: center;
+}
+
+.form_img img {
+    width: 180px;
+    height: 50px;
+    margin-top: 10px;
+}
+.page_buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.page_google_icon {
+    padding: 5px 10px 5px 10px;
+    border-radius: 100px;
+    display: flex;
+    border: 1px solid #8d97ad;
+    cursor: pointer;
+    margin: 10px;
+    max-width:200px;
+
+}
+.page_google_icon  span {
+    margin-left: 10px;
+    color:#000;
+    font-family: sans-serif;
+    font-size: 1rem;
+}
+.page_google_icon:hover {
+    background-color:#bcbdc0;
+  
+}
+.page_google_icon img {
+    width: 20px;
+}
+.page_facebook_icon {
+    margin: 10px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 100px;
+    display: flex;
+    border: 1px solid #8d97ad;
+    cursor: pointer;
+    max-width:200px;
+}
+.page_facebook_icon img {
+    width: 40px;
+}
+.page_facebook_icon span {
+    margin-left: 4px;
+    color:#000;
+    font-family: sans-serif;
+    font-size: 1rem;
+}
+.page_facebook_icon:hover {
+    background-color:#bcbdc0;
+  
+}
+.page_orsign {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.page_orsign > div {
+    margin: 15px;
+    color: #bcbdc0;
+}
+.users_input {
+    text-align: center;
+}
+.users_input  label {
+    display: block;
+    margin-top: 10px;
+    text-align: start;
+    margin-left: 20px;
+
+    line-height: 14px;
+
+    letter-spacing: normal;
+
+    
+    color: #111c2d;
+}
+.users_input  input {
+    border-radius: 15px ;
+    border: 1px solid #111c2d;
+    width: 90%;
+    padding: 15px;
+    outline-color: blue;
+    color: #111c2d;
+    margin-top: 10px;
+}
+.password_input  {
+    text-align: center;
+}
+.password_input  label {
+    display: block;
+    margin-top: 10px;
+    text-align: start;
+    margin-left: 20px;
+     line-height: 14px;
+    letter-spacing: normal;
+    color: #111c2d;
+}
+.password_input input {
+     border-radius: 15px ;
+    border: 1px solid #111c2d;
+    width: 90%;
+    padding: 15px;
+    outline-color: blue;
+    color: #111c2d;
+    margin-top: 10px;
+}
+.checkbox_form {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.checkbox_form a {
+    color: blue;
+    cursor: pointer;
+    margin-top: 6px;
+}
+.buttons_form {
+    margin-top: 20px;
+    display:flex;
+    justify-content: center;
+}
+.buttons_form button {
+    background-color: #0085db;
+    padding: 10px;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 90%;
+    font-family: sans-serif;
+}
+.texts_form {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.texts_form p {
+    font-family:sans-serif
+}
+.texts_form a {
+    color:blue;
+    font-weight: 400;
+   cursor: pointer;
+}
+////Responsive Design
+@media only screen and (max-width:1252px) {
+    mat-toolbar >  div {
+        width: 840px;
+    }
+
+    // .profil {
+    //     margin-left: 20px;
+    //     position: relative;
+    //     right: 318px;
+
+    // }
+}
+@media only screen and (max-width:1158px){
+    mat-toolbar >  div  {
+        width:820px;
+    }
+}
+@media only screen and (max-width:1145px) {
+    mat-toolbar > div {
+        width: 770px;
+    }
+
+    // .profil {
+    //     margin-left: 20px;
+    //     position: relative;
+    //     right: 400px;
+
+    // }
+}
+
+@media only screen and (max-width:1107) {
+    mat-toolbar > div {
+        width: 680px;
+    }
+
+  
+}
+
+@media only screen and (max-width:1087px) {
+    mat-toolbar > div {
+        width: 680px;
+    }
+
+    // .profil {
+    //     margin-left: 20px;
+    //     position: relative;
+    //     right: 440px;
+
+    // }
+}
+
+@media only screen and (max-width:1013px) {
+    mat-toolbar > div {
+        width: 550px;
+    }
+
+    // .profil {
+    //     margin-left: 20px;
+    //     position: relative;
+    //     right: 550px;
+
+    // }
+}
+
+@media only screen and (max-width:907px) {
+    // .profil {
+    //     margin-left: 20px;
+    //     position: relative;
+    //     right: 660px;
+
+    // }
+}
+
+@media only screen and (max-width:861px) {
+    mat-toolbar > div {
+        width: 450px;
+    }
+
+    // .profil {
+    //     margin-left: 20px;
+    //     position: relative;
+    //     right: 200px;
+
+    // }
+}
+//Responsive Design
+@media only screen and (max-width:807px) {
+    app-sidenav {
+        display: none;
+    }
+
+    .menu {
+        display: inline-block;
+    }
+
+    mat-toolbar > div {
+        width: 800px;
+    }
+
+    // .profil {
+    //     margin-left: 20px;
+    //     position: relative;
+    //     left: 520px;
+    //     top: 10px;
+    //     font-size: 0.88rem;
+
+
+    // }
+}
+
+@media only screen and (max-width:600px){
+    // .profil{
+    //     margin-left: 20px;
+    //     position: relative;
+    //     right:1000px;
+    //   top: 10px;
+    //     font-size: 0.88rem;
+    // }
+    .menu {
+        display: inline-block;
+    }
+}
+@media only screen and (max-width:570px){
+   
+    .menu {
+        display: inline-block;
+    }
+}
+@media only screen and (max-width:450px){
+    .main {
+        width: 100%;
+    }
+    // .profil{
+    //     margin: 0 auto;
+    //     z-index: 14;
+    //     position: relative;
+    //     left: 100px;
+    //     right: 0;
+    //   top: 10px;
+    //     font-size: 0.88rem;
+
+    // }
+    body {
+        background-color: #8d97ad;
+    }
+}
+router-outlet {
+  
+    margin-left: 200px;
+    z-index:99;
+    width: auto;
+    height:auto;
+}

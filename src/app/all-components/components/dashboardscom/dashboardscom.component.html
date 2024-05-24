@@ -1,1 +1,83 @@
-<p>dashboardscom works!</p>
+<div class="main">
+    <div class="felx_content">
+     <div class="charts">
+        <div class="profit">
+          <h2>Profit & Expenses</h2>
+          <button class="matmenu" mat-button [matMenuTriggerFor]="beforeMenu"><mat-icon>more_vert</mat-icon></button>
+          <mat-menu #beforeMenu="matMenu" xPosition="before">
+            <button mat-menu-item>Action</button>
+            <button mat-menu-item>Anoter Action</button>
+            <button mat-menu-item>Something else here</button>
+          </mat-menu>
+  
+        </div>
+  
+        <ngx-charts-bar-vertical class="ngxx" [view]="view" [showYAxisLabel]="showYAxislabel" [gradient]="gradient"
+          [xAxis]="xAxis" [results]="productSales" [animations]="animations" [showGridLines]="showGridLines"
+          [roundEdges]="roundEdges" [tooltipDisabled]="tooltipDisabled" [legendTitle]="legendTitle" [legend]="legend"
+          [yAxis]="yAxislabel" [xAxis]="xAxislabel" [showXAxisLabel]="showXAxislabel" [showGridLines]="showGridLines"
+          [gradient]="gradient">
+        </ngx-charts-bar-vertical>
+      </div>
+      <div class="traffics">
+        <div class="page_top">
+          <div class="page_title">
+            <h4>Traffic Distribution</h4>
+          </div>
+  
+          <div class="page_flex_content">
+            <div class="page_right">
+              <h2>$36,358</h2>
+              <div class="flexs">
+                <div class="arrow">
+                  <mat-icon>arrow_outward</mat-icon>
+                </div>
+                <span>+9%
+                  last year</span>
+              </div>
+            </div>
+            <div class="page_left">
+              <mat-progress-spinner class="example-margin" [color]="color" [mode]="mode" [value]="value">
+              </mat-progress-spinner>
+              <!-- <img src="./assets/darks-logo.svg" alt="photo error!"> -->
+            </div>
+          </div>
+          <div class="page_oragnic">
+            <div class="page_rights">
+              <div class="organicss">
+                1
+              </div> <span>Oragnic</span>
+            </div>
+            <div class="page_left">
+              <div class="refferals">1</div> <span>Refferal</span>
+            </div>
+          </div>
+        </div>
+        <div class="page_bottom">
+          <div class="page_containers">
+            <div class="pages_rights">
+              <h4>Product Sales</h4>
+            </div>
+           <div class="page_lefts">
+            <div class="dollarslogo">
+              <mat-icon>attach_money</mat-icon>
+            </div>
+           </div></div>
+           <div class="pages_dollars">
+            <h5>$6,820</h5>
+           </div>
+  <div class="pages_ends">
+    <div class="south">
+  <mat-icon>south_east</mat-icon>
+    </div>
+    <span>+9%
+      last year</span>
+  </div>
+  
+  
+  
+        </div>
+      </div>
+    </div>
+  
+  </div>

@@ -1,10 +1,21 @@
-import { Component } from '@angular/core';
+import { Dialog } from '@angular/cdk/dialog';
+import { Component, Input, OnInit } from '@angular/core';
+import { AuthenticationService } from '../../services/authentication.service';
 
 @Component({
   selector: 'app-sidenav',
   templateUrl: './sidenav.component.html',
   styleUrl: './sidenav.component.scss'
 })
-export class SidenavComponent {
+export class SidenavComponent implements OnInit{
+  @Input() totalpages:number=0;
+  ngOnInit(): void {
+   
+  }
+ 
+  constructor(public dialogs:Dialog, public authen:AuthenticationService){}
+ menu() :void{
+  this.dialogs.open(SidenavComponent)}
 
 }
+

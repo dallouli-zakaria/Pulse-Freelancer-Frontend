@@ -1,0 +1,349 @@
+.main {
+    width: 100%;
+    // height:vh;
+}
+
+.felx_content {
+    display: flex;
+    justify-content: end;
+    margin-top: 40px;
+    padding: 10px;
+
+}
+
+.charts {
+    background-color: #fff;
+    width: 830px;
+    max-width: 800px;
+    min-width: 100px;
+    height: 480px;
+    padding: 18px;
+    margin-right: 40px;
+    border-radius: 10px;
+}
+
+.profit {
+    display: flex;
+    justify-content: space-between;
+}
+
+.page_top {
+    background-color: #fff;
+    min-width: 100px;
+    padding: 10px;
+    max-width: 600px;
+    width: 360px;
+    border-radius: 15px;
+    max-height: 300px;
+    margin: 10px;
+    margin-top: -1px;
+    margin-left: -15px;
+}
+
+.page_top .page_title h4 {
+    font-weight: bold;
+    font-family: sans-serif;
+    color: black;
+}
+
+.page_top .page_flex_content {
+    display: flex;
+
+    padding: 6px;
+}
+
+.page_flex_content .flexs {
+    display: flex;
+    text-align: start;
+}
+
+.page_flex_content .flexs .arrow {
+    background-color: aqua;
+    border-radius: 100%;
+    text-align: center;
+    width: 40px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.arrow mat-icon {
+    width: 30px;
+    height: 30px;
+    color: green;
+}
+
+.flexs span {
+    color: black;
+    font-weight: bolder;
+    margin-left: 10px;
+    font-family: var(--font-familys);
+}
+
+.page_left img {
+    width: 110px;
+    margin-left: 20px;
+
+}
+
+mat-progress-spinner {
+    border-radius: 100%;
+    border-top: 15px solid rgba(99, 91, 91, 0.133);
+    border-bottom: 15px solid rgb(253, 143, 143);
+    border-left: 15px solid rgb(2, 2, 128);
+    border-right: 15px solid rgba(99, 91, 91, 0.133);
+    margin-left: 20px;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+.page_oragnic {
+    display: flex;
+    justify-content: start;
+    text-align: start;
+
+}
+
+.page_left {
+    display: flex;
+}
+
+.organicss {
+    border-radius: 100%;
+    width: 20px;
+    background-color: rgb(2, 2, 128);
+    color: rgb(2, 2, 128);
+}
+
+.page_rights {
+    display: flex;
+    margin-left: 14px;
+}
+
+.page_rights span {
+    color: black;
+    font-weight: 500;
+    
+    margin-left: 3px;
+
+}
+
+.refferals {
+    border-radius: 100%;
+    width: 20px;
+    background-color: rgb(253, 143, 143);
+    color: rgb(253, 143, 143);
+}
+
+.page_left {
+    margin-left: 10px;
+}
+
+.page_left span {
+    color: black;
+    font-weight: 500;
+
+    margin-left: 16px;
+
+}
+
+.page_bottom {
+    background-color: #fff;
+    min-width: 100px;
+    padding: 10px;
+    max-width: 600px;
+    width: 360px;
+    border-radius: 15px;
+    max-height: 300px;
+    margin: 10px;
+    margin-top: 30px;
+    margin-left: -15px;
+}
+
+.page_containers {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.dollarslogo {
+    background-color: rgb(253, 143, 143);
+
+display: flex;
+justify-content: center;
+align-items: center;
+height:40px;
+cursor: pointer;
+    width:40px;
+    border-radius: 100%;
+    color:#fff;
+}
+.pages_rights h4 {
+    font-weight: bold;
+    font-family: sans-serif;
+    color: black;
+    font-size: 1.3rem;
+}
+.pages_dollars {
+    padding: 6px;
+}
+.pages_dollars h5 {
+    font-weight: bold;
+    color: black;
+    font-size:1.4rem;
+}
+.pages_ends {
+    display: flex;
+}
+.south {
+    background-color:rgb(253, 143, 143);
+    width:40px;
+    height: 40px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.south mat-icon {
+    width:auto;
+    color:#fff;
+}
+.pages_ends {
+    padding: 6px;
+}
+.pages_ends span{
+    font-weight: bold;
+    color: black;
+    margin-left: 15px;
+}
+// Responsive Design
+@media only screen and (max-width:1280px) {
+    .charts {
+        width: 800px;
+        margin-left: 300px;
+    }
+
+    .page_top {
+        max-width: 800px;
+        width: 1200px;
+        min-width: 200px;
+        // display: none;
+        margin-left: 300px;
+        margin-top: 20px;
+    }
+
+    .felx_content {
+        justify-content: center;
+        flex-direction: column;
+        margin-left: 20px;
+    }
+    .page_bottom {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:1147px) {
+    .charts {
+        max-width: 460px;
+    }
+
+    .felx_content {
+        justify-content: center;
+    }
+       .page_top {
+        max-width:460px;
+       }
+
+}
+
+@media only screen and (max-width:1127px) {
+    .charts {
+        max-width: 450px;
+    }
+     .page_top {
+        max-width:460px;
+     }
+}
+
+@media only screen and (max-width:1090px) {
+    .charts {
+        min-width: 200px;
+        width: 500px;
+        margin-left: 350px;
+    }
+ .page_top {
+    width:500px;
+    min-width: 200px;
+    margin-left:350px;
+ }
+    .felx_content {
+        justify-content: center;
+    }
+
+}
+
+@media only screen and (max-width:1000px) {
+    .charts {
+        margin-left: 300px;
+        max-height: 300px;
+        width: 100%;
+    }
+    .page_top {
+        margin-left:300px;
+        max-height: 300px;
+        width: 100%;
+    }
+    .felx_content {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width:740px) {
+
+    .ng-star-inserted {
+        width: 100px;
+    }
+
+    .felx_content {
+        justify-content: center;
+    }
+}
+
+.matmenu {
+    text-align: center;
+}
+
+@media only screen and (max-width:801px) {
+    .charts {
+        margin-left: 20px;
+        width: 90%
+    }
+
+    .page_top {
+        margin-left: 20px;
+        width: 90%;
+    }
+
+    .felx_content {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .felx_content {
+        justify-content: center;
+    }
+
+    .charts {
+        width: 80%;
+        margin-left: 0;
+    }
+    .page_top {
+        width: 80%;
+        margin-left: 0;
+    }
+    .page_flex_content {
+        flex-direction: column;
+    }
+}

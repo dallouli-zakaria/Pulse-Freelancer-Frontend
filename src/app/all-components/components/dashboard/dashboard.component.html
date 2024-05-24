@@ -1,1 +1,30 @@
-<p>dashboard works!</p>
+<div class="main">
+    <app-sidenav></app-sidenav>
+    <mat-toolbar>
+      <div>
+        <div class="icon">
+          <mat-icon (click)="menu()" class="menu">menu</mat-icon>
+          <mat-icon>notifications_active</mat-icon>
+        </div>
+        <div class="button_img_page">
+          <button>Upgrade to Pro</button>
+          <!-- (click)="knop()" -->
+          <img mat-button [matMenuTriggerFor]="menus" #menuTrigger src="./assets/user-1.jpg" alt="photo error!">
+        </div>
+      </div>
+    </mat-toolbar>
+    <mat-menu #menus="matMenu">
+      <div class="profil">
+        <div class="lists">
+          <ul>
+  
+            <li> <mat-icon>person</mat-icon> <span>My Profile</span></li>
+            <li> <mat-icon>system_update_alt</mat-icon> <span>My Account</span></li>
+            <li><mat-icon>playlist_add</mat-icon> <span>My Task</span></li>
+          </ul>
+          <button >Logout</button>
+        </div>
+      </div>
+    </mat-menu>
+    <router-outlet></router-outlet>
+  </div>
