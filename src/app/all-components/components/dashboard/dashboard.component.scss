@@ -1,14 +1,14 @@
-.main {
+.main1 {
     width: 100%;
     min-height: 100vh;
     max-height: 900vh;
     background-color: #f0f5f9;
-    // position: fixed;
+    position: fixed;
 }
 
 mat-toolbar {
     display: flex;
-    // position: fixed;
+    // position: relative;
     justify-content: end;
     min-width: 100%;
 }
@@ -19,7 +19,7 @@ mat-toolbar {
 
 mat-toolbar > div {
     background-color: #fff;
-    width: 1200px;
+    width:77%;
     min-width: 100px;
     margin-top: 20px;
     height: 72px;

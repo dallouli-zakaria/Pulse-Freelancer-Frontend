@@ -12,6 +12,7 @@ export class SidenavComponent implements OnInit{
   ngOnInit(): void {
    
   }
+  panelOpenState = false;
  
   constructor(public dialogs:Dialog, public authen:AuthenticationService){}
  menu() :void{

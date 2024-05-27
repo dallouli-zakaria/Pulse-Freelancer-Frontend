@@ -175,3 +175,20 @@ ul li:hover{
     width: 130px;
     font-family: sans-serif;
 }
+.style::before{
+    
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    height: 98%;
+    z-index: -1;
+    transition: .4s;
+    width: 0;
+    background-color: #f0f5f9;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  
+
+}

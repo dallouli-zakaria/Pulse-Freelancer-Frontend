@@ -5,9 +5,21 @@
     <div class="home">
         <ul>
             <li class="homes"> HOME</li>
-            <div></div>
-            <li class="dashboards" routerLink="dashboards">
-                <mat-icon>dashboard</mat-icon> <span>Dashboard</span>
+            <li class="dashboards" routerLink="dashboards" >
+                
+              <mat-accordion>
+                <mat-expansion-panel  style=" box-shadow: none !important; border: none !important;" hideToggle>
+                  <mat-expansion-panel-header >
+                <mat-panel-title   >
+                      <mat-icon style="margin: 0px;">dashboard</mat-icon> <span>Dashboard</span>
+                </mat-panel-title> 
+                </mat-expansion-panel-header>
+                      <li class="token" style="margin: 10px;"> <mat-icon>token</mat-icon> <span>Badge</span> </li>
+                      <li class="chips" style="margin: 10px;"> <mat-icon>camera</mat-icon>  <span>CHIPS</span></li>
+                </mat-expansion-panel>
+                <mat-expansion-panel (opened)="panelOpenState = true"(closed)="panelOpenState = false">                    
+                </mat-expansion-panel>
+              </mat-accordion>  
             </li>
             <li class="uii">UI Componenets</li>
             <li class="token"> <mat-icon>token</mat-icon> <span>Badge</span> </li>
