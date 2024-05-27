@@ -1,7 +1,7 @@
 import { Dialog } from '@angular/cdk/dialog';
 import { Component } from '@angular/core';
-import { AuthenticationService } from '../../../services/authentication.service';
 import { SidenavComponent } from '../../../layout/sidenav/sidenav.component';
+import { AuthenticationService } from '../../../core/services/authentication.service';
 
 @Component({
   selector: 'app-dashboard',

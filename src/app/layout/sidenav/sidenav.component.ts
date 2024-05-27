@@ -1,6 +1,7 @@
 import { Dialog } from '@angular/cdk/dialog';
 import { Component, Input, OnInit } from '@angular/core';
-import { AuthenticationService } from '../../services/authentication.service';
+import { AuthenticationService } from '../../core/services/authentication.service';
+
 
 @Component({
   selector: 'app-sidenav',
@@ -14,7 +15,7 @@ export class SidenavComponent implements OnInit{
   }
   panelOpenState = false;
  
-  constructor(public dialogs:Dialog, public authen:AuthenticationService){}
+  constructor(public dialogs:Dialog, public auth:AuthenticationService){}
  menu() :void{
   this.dialogs.open(SidenavComponent)}
 

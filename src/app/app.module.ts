@@ -13,6 +13,10 @@ import { FormsModule } from '@angular/forms';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MaterialModule } from './all-components/components/material/material';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
+import { AdminComponent } from './all-components/components/admin/admin/admin.component';
+import { ClientCardComponent } from './all-components/components/cards/client-card/client-card.component';
+import { FreelancerCardComponent } from './all-components/components/cards/freelancer-card/freelancer-card.component';
+import { ContractCardComponent } from './all-components/components/cards/contract-card/contract-card.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +24,11 @@ import { NgxChartsModule } from '@swimlane/ngx-charts';
     SidenavComponent,
     TopbarComponent,
     DashboardComponent,
-    DashboardscomComponent
+    DashboardscomComponent,
+    AdminComponent,
+    ClientCardComponent,
+    FreelancerCardComponent,
+    ContractCardComponent
   ],
   imports: [
     BrowserAnimationsModule,
