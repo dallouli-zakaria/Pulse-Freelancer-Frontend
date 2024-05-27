@@ -17,6 +17,8 @@ import { AdminComponent } from './all-components/components/admin/admin/admin.co
 import { ClientCardComponent } from './all-components/components/cards/client-card/client-card.component';
 import { FreelancerCardComponent } from './all-components/components/cards/freelancer-card/freelancer-card.component';
 import { ContractCardComponent } from './all-components/components/cards/contract-card/contract-card.component';
+import { FreelancerComponent } from './all-components/components/freelancer/freelancer/freelancer.component';
+import { ContractComponent } from './all-components/components/contracts/contract/contract.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { ContractCardComponent } from './all-components/components/cards/contrac
     AdminComponent,
     ClientCardComponent,
     FreelancerCardComponent,
-    ContractCardComponent
+    ContractCardComponent,
+    FreelancerComponent,
+    ContractComponent
   ],
   imports: [
     BrowserAnimationsModule,
