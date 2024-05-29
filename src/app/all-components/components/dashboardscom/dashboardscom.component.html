@@ -1,8 +1,9 @@
 
 
-  <mat-grid-list class="grid-container" [cols]="gridCols" rowHeight="3:1" [gutterSize]="'0px'">
+  <mat-grid-list class="grid-container" [cols]="gridCols" rowHeight="150px" gutterSize="10px">
+    <div>
     <mat-grid-tile  class="grid-item" > <app-client-card></app-client-card> </mat-grid-tile>
-    <mat-grid-tile  class="grid-item" ><app-freelancer-card></app-freelancer-card> </mat-grid-tile>
-    <mat-grid-tile  class="grid-item" ><app-contract-card></app-contract-card> </mat-grid-tile>
-
+    <mat-grid-tile  class="grid-item" [rowspan]="1" ><app-freelancer-card></app-freelancer-card> </mat-grid-tile>
+    <mat-grid-tile  class="grid-item" [rowspan]="1" ><app-contract-card></app-contract-card> </mat-grid-tile>  
+    </div>
   </mat-grid-list>

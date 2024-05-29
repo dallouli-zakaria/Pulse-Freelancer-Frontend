@@ -24,20 +24,20 @@
               </mat-accordion>   -->
             </li>
             <li class="token" routerLink="admin" routerLinkActive="router-link-active" > <mat-icon>face</mat-icon> <span>ADMIN</span> </li>
-            <li class="chips"> <mat-icon>account_circle</mat-icon>  <span>FREELANCERS</span></li>
-            <li class="chips"> <mat-icon>sentiment_satisfied</mat-icon> <span>CLIENTS</span></li>
-            <li class="chips"> <mat-icon>class</mat-icon> <span>MEETS</span></li>
-            <li class="chips"> <mat-icon>card_travel</mat-icon> <span>CONTRACTS</span></li>
+            <li class="chips" routerLink="freelancer"> <mat-icon>account_circle</mat-icon>  <span>FREELANCERS</span></li>
+            <li class="chips" routerLink="client"> <mat-icon>sentiment_satisfied</mat-icon> <span>CLIENTS</span></li>
+            <li class="chips" routerLink="meet"> <mat-icon>class</mat-icon> <span>MEETS</span></li>
+            <li class="chips" routerLink="contract"> <mat-icon>card_travel</mat-icon> <span>CONTRACTS</span></li>
         </ul>
         <ul>
             
             <li class="auth">ACCESSIBILITY</li> 
-            <li class="chips"> <mat-icon> accessibility</mat-icon> <span>ROLES</span></li>
-            <li class="chips"> <mat-icon>cyclone</mat-icon> <span>PERMISSION</span></li>
+            <li class="chips" routerLink="role"> <mat-icon> accessibility</mat-icon> <span>ROLES</span></li>
+            <li class="chips" routerLink="permission"> <mat-icon>cyclone</mat-icon> <span>PERMISSION</span></li>
        
         <li class="auth">AUTH</li>
-            <li  class="chips"> <mat-icon>lock</mat-icon> <span>Login</span></li>
-            <li class="chips"> <mat-icon>person_add</mat-icon> <span>Register</span></li>
+            <li  class="chips" routerLink="login"> <mat-icon>lock</mat-icon> <span>Login</span></li>
+            <li class="chips" routerLink="signUp"> <mat-icon>person_add</mat-icon> <span>Register</span></li>
         </ul>    
    <div class="page_button">  <button class="upgrade">Upgrade To Pro</button></div>
     </div>
