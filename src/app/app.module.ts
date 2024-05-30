@@ -33,6 +33,9 @@ import { RoleComponent } from './all-components/components/accessibility/roles/r
 import { PermissionComponent } from './all-components/components/accessibility/permissions/permission/permission.component';
 import { TableRoleComponent } from './all-components/components/tables/table-role/table-role.component';
 import { TablePermissionComponent } from './all-components/components/tables/table-permission/table-permission.component';
+import { CanvasJSAngularChartsModule } from '@canvasjs/angular-charts';
+import { HttpBackend, provideHttpClient } from '@angular/common/http';
+import { ClientService } from './core/services/client.service';
 
 
 
@@ -72,11 +75,12 @@ import { TablePermissionComponent } from './all-components/components/tables/tab
     MaterialModule,
     MatDialogModule,
     FormsModule,
+    CanvasJSAngularChartsModule
   
     
   ],
   providers: [
-    provideAnimationsAsync()
+    provideAnimationsAsync(),provideHttpClient()
   ],
   bootstrap: [AppComponent]
 })
