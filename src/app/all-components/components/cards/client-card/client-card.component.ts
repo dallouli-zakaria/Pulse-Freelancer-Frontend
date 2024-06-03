@@ -13,13 +13,14 @@ client!:any
 
  }
   ngOnInit(): void {
-    //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
-    //Add 'implements OnInit' to the class.
-  this.clint.count().subscribe((data)=>{
-this.client=data;
- }
+  this.clint.count().subscribe({next:(data)=>{
+   this.client=data},
+   error:(error:any)=>{
+   console.log(error);}
+   },);
+   }
   
- )
+ 
   }
 
-}
+

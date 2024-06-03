@@ -7,6 +7,9 @@ import { Component } from '@angular/core';
 })
 export class TableFreelancerComponent {
   data:any = [
+    'id',
+    'name',
+    'email'
    
   ];
   displayedColumns: string[] = ['id', 'name','email', 'role', 'update','delete'];

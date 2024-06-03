@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { ClientService } from '../../../../core/services/client.service';
 import { ContractServiceService } from '../../../../core/services/contract-service.service';
 import { FreelancerService } from '../../../../core/services/freelancer.service';
+import { FreelancerCardComponent } from './../../cards/freelancer-card/freelancer-card.component';
+import { number } from 'echarts';
 
 @Component({
   selector: 'app-chart-dash',
@@ -11,7 +13,8 @@ import { FreelancerService } from '../../../../core/services/freelancer.service'
 export class ChartDashComponent {
   client!:any
   contarct!:any
-  freelancer!:number
+  freelancer!:any
+  free!:number
   constructor(private clint:ClientService,private contracts:ContractServiceService
     ,private freelancers:FreelancerService
   ){
@@ -23,9 +26,14 @@ export class ChartDashComponent {
     //contarct obeservable
     this.contracts.count().subscribe((data:any)=>{this.contarct = data} );
     //freeacer observable
-    this.freelancers.count().subscribe((data:any)=>{this.freelancer=data});
+  
 
+    this.freelancer=    this.freelancers.count().subscribe((data)=>{this.freelancer=data});
+    this.free=this.freelancer;
+    console.log("nuber of freelancer"+this.free);
+    
   }
+
 
 
 
@@ -42,7 +50,7 @@ columnChartOptions = {
         dataPoints: [
           { label: 'client', y: this.client},
           { label: 'contract', y: this.contarct },
-          { label: 'freelancer', y: this.freelancer },
+          { label: 'freelancer', y: this.freelancer},
         
         ],
       },
