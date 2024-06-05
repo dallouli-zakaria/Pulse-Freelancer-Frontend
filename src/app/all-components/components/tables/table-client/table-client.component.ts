@@ -1,4 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Client } from '../../../../core/models/Client';
+import { id } from '@swimlane/ngx-charts';
+import { HttpClient } from '@angular/common/http';
+import { ClientService } from '../../../../core/services/client.service';
 
 @Component({
   selector: 'app-table-client',
@@ -6,9 +10,27 @@ import { Component } from '@angular/core';
   styleUrl: './table-client.component.scss'
 })
 export class TableClientComponent {
-  data:any = [
+
+  constructor(private clientS:ClientService){
+
+  }
+  dataSourci:any;
+  dataSource:any
+
+  ngOnInit(): void {
+    //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
+    //Add 'implements OnInit' to the class.
+   this.dataSourci = this.clientS.index().subscribe({
+    next:(data:Client)=>{
+      this.dataSource=data;
+      console.log(data);
+      
+
+    }
+   });
    
-  ];
-  displayedColumns: string[] = ['id', 'name','email', 'role', 'update','delete'];
-  dataSource = this.data;
+  }
+  // dat: any = [];
+  displayedColumns: string[] = ['id', 'name', 'email', 'profession','action'];
+  
 }

@@ -10,6 +10,7 @@ import { LoginComponent } from './all-components/components/auth/login/login.com
 import { SignUpComponent } from './all-components/components/auth/sign-up/sign-up.component';
 import { RoleComponent } from './all-components/components/accessibility/roles/role/role.component';
 import { PermissionComponent } from './all-components/components/accessibility/permissions/permission/permission.component';
+import { UsersComponent } from './all-components/components/users/users.component';
 
 const routes: Routes = [
   {path:'dashboards',component:DashboardscomComponent},
@@ -21,7 +22,8 @@ const routes: Routes = [
   {path:'login',component:LoginComponent},
   {path:'signUp',component:SignUpComponent},
   {path:'role',component:RoleComponent},
-  {path:'permission',component:PermissionComponent}
+  {path:'permission',component:PermissionComponent},
+  {path:'users',component:UsersComponent}
 ];
 
 @NgModule({

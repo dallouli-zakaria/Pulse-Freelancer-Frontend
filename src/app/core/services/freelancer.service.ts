@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Freelancer } from '../models/freelancer';
 
 @Injectable({
   providedIn: 'root'
@@ -13,7 +14,8 @@ export class FreelancerService {
     return freelancer;
   }
   public index(){
-    this.http.get('')
+   const freelancer= this.http.get<Freelancer>('http://localhost:8000/api/freelancers')
+   return freelancer
   }
 
   public update(data:any){

@@ -36,6 +36,7 @@ import { TablePermissionComponent } from './all-components/components/tables/tab
 import { CanvasJSAngularChartsModule } from '@canvasjs/angular-charts';
 import { HttpBackend, provideHttpClient } from '@angular/common/http';
 import { ClientService } from './core/services/client.service';
+import { UsersComponent } from './all-components/components/users/users.component';
 
 
 
@@ -66,6 +67,7 @@ import { ClientService } from './core/services/client.service';
     PermissionComponent,
     TableRoleComponent,
     TablePermissionComponent,
+    UsersComponent,
    
   ],
   imports: [

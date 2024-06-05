@@ -14,8 +14,11 @@ contract!:any
 
   ngOnInit(): void {
    this.contracts.count().subscribe({
+    
     next: (data:any)=>{this.contract=data},
+
     error:(error:any)=>{console.log(error);
+
    }});
   }
 }
