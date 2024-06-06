@@ -19,4 +19,7 @@ export class ClientService {
     const Client=this.http.get<Client>('http://localhost:8000/api/clients')
     return Client
   }
+  public update(){
+    
+  }
 }
