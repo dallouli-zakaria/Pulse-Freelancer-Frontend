@@ -10,24 +10,27 @@ import { Freelancer } from '../../../../core/models/freelancer';
 })
 export class TableFreelancerComponent {
 
-dataSource:any;
-dataSourc:any
+dataSource:any=[];
+freelancerData:any=[];
   constructor(private freelancers:FreelancerService){
   }
 ngOnInit(): void {
-  //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
-  //Add 'implements OnInit' to the class.
-
-
-   this.dataSourc= this.freelancers.index().subscribe({
-    next:(data:Freelancer)=>{
-      this.dataSource=data
-      console.log(data);
-      
-    }
-   });
+this.index();
 }
 
+public index(){
+
+    this.freelancerData= this.freelancers.index().subscribe({
+     next:(data:Freelancer)=>{
+      this.dataSource=data
+      console.log(data); 
+      },
+     error:(erroe)=>{
+      console.log(erroe);  
+      }
+    });
+  return this.freelancerData
+}
   
   displayedColumns: string[] = ['id','name','email','title', 'city', 'TJM', 'availability', 'phone','action'];
  

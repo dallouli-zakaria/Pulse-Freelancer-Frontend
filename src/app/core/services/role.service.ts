@@ -11,5 +11,6 @@ export class RoleService {
 role:any
   public index(){
     this.role=this.http.get<Role>("http://localhost:8000/api/role")
+    return this.role;
   }
 }
