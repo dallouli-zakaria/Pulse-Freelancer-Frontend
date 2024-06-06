@@ -13,4 +13,9 @@ contract:any;
   this.contract=  this.http.get("http://localhost:8000/api/contractCount");
 return this.contract;
   }
+
+
+  public index(){
+    
+  }
 }
