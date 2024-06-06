@@ -1,3 +1,4 @@
+import { IndexComponent } from './all-components/pages/index/index.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DashboardscomComponent } from './all-components/components/dashboardscom/dashboardscom.component';
@@ -11,6 +12,7 @@ import { SignUpComponent } from './all-components/components/auth/sign-up/sign-u
 import { RoleComponent } from './all-components/components/accessibility/roles/role/role.component';
 import { PermissionComponent } from './all-components/components/accessibility/permissions/permission/permission.component';
 import { UsersComponent } from './all-components/components/users/users.component';
+import { FindWorkComponent } from './all-components/pages/find-work/find-work.component';
 
 const routes: Routes = [
   {path:'dashboards',component:DashboardscomComponent},
@@ -23,7 +25,9 @@ const routes: Routes = [
   {path:'signUp',component:SignUpComponent},
   {path:'role',component:RoleComponent},
   {path:'permission',component:PermissionComponent},
-  {path:'users',component:UsersComponent}
+  {path:'users',component:UsersComponent},
+  {path:'index',component:IndexComponent},
+  {path:'findw',component:FindWorkComponent}
 ];
 
 @NgModule({

@@ -37,6 +37,11 @@ import { CanvasJSAngularChartsModule } from '@canvasjs/angular-charts';
 import { HttpBackend, provideHttpClient } from '@angular/common/http';
 import { ClientService } from './core/services/client.service';
 import { UsersComponent } from './all-components/components/users/users.component';
+import { IndexComponent } from './all-components/pages/index/index.component';
+import { FindWorkComponent } from './all-components/pages/find-work/find-work.component';
+import { FindFreelancerComponent } from './all-components/pages/find-freelancer/find-freelancer.component';
+import { HeaderComponent } from './all-components/pages/header/header.component';
+import { FooterComponent } from './all-components/pages/footer/footer.component';
 
 
 
@@ -68,6 +73,11 @@ import { UsersComponent } from './all-components/components/users/users.componen
     TableRoleComponent,
     TablePermissionComponent,
     UsersComponent,
+    IndexComponent,
+    FindWorkComponent,
+    FindFreelancerComponent,
+    HeaderComponent,
+    FooterComponent,
    
   ],
   imports: [
