@@ -6,9 +6,16 @@ import { Component } from '@angular/core';
   styleUrl: './table-role.component.scss'
 })
 export class TableRoleComponent {
-  data:any = [
-   
-  ];
-  displayedColumns: string[] = ['id', 'name','email', 'role', 'update','delete'];
-  dataSource = this.data;
+  constructor(){}
+  dataSource:any;
+  roleData:any
+
+  ngOnInit(): void {
+    //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
+    //Add 'implements OnInit' to the class.
+  
+  }
+
+  displayedColumns: string[] = ['id', 'name','email'];
+  
 }

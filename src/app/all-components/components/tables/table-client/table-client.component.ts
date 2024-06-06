@@ -14,18 +14,20 @@ export class TableClientComponent {
   constructor(private clientS:ClientService){
 
   }
-  dataSourci:any;
+  
   dataSource:any
-
+  clientData:any
   ngOnInit(): void {
     //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
     //Add 'implements OnInit' to the class.
-   this.dataSourci = this.clientS.index().subscribe({
+   this.clientData = this.clientS.index().subscribe({
     next:(data:Client)=>{
       this.dataSource=data;
       console.log(data);
+    },
+    error:(erroe)=>{
+      console.log(erroe);
       
-
     }
    });
    
